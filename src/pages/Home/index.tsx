@@ -11,6 +11,7 @@ import {
   doc,
 } from "firebase/firestore";
 import Loading from "../../components/Loading";
+import { Link } from "react-router-dom";
 
 interface LinkProps {
   id: string;
@@ -114,6 +115,10 @@ const Home = () => {
             </Social>
           </footer>
         )}
+
+        <div className="w-full flex justify-end">
+          <Link to="/login" className="bg-white w-24 rounded-2xl cursor-pointer font-medium">Login</Link>
+        </div>
       </main>
     </div>
   );
